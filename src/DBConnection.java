@@ -7,7 +7,7 @@ public class DBConnection {
             return DriverManager.getConnection(
                     "jdbc:postgresql://localhost:5432/inventory_db",
                     "postgres",
-                    "your_password"
+                    "Alan_gesora2000"
             );
         } catch (Exception e) {
             System.out.println("Connection failed: " + e.getMessage());
