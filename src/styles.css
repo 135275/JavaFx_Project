@@ -1,0 +1,166 @@
+/*
+ * CSS Stylesheet for Inventory Management System
+ * Demonstrates: CSS styling in JavaFX (bonus marks)
+ */
+
+/* ── Root & General ── */
+.root {
+    -fx-font-family: "System";
+    -fx-font-size: 13px;
+    -fx-background-color: #f5f6fa;
+}
+
+.root-pane {
+    -fx-background-color: #f5f6fa;
+}
+
+/* ── Title Bar ── */
+.title-bar {
+    -fx-background-color: #2c3e50;
+    -fx-padding: 16 20 12 20;
+}
+
+.title-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* ── Table Styling ── */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #2c3e50;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 6 10 6 10;
+}
+
+.table-view .table-row-cell {
+    -fx-border-color: transparent transparent #ecf0f1 transparent;
+    -fx-padding: 4 0 4 0;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #ebf5fb;
+}
+
+.table-view .table-row-cell:selected:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* ── Forms Panel ── */
+.forms-panel {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #dcdde1;
+    -fx-border-width: 0 0 0 1;
+}
+
+.form-section {
+    -fx-background-color: white;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 4, 0, 0, 1);
+}
+
+/* ── Text Fields ── */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 8 10 8 10;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused {
+    -fx-border-color: #3498db;
+    -fx-effect: dropshadow(three-pass-box, rgba(52,152,219,0.3), 4, 0, 0, 0);
+}
+
+/* ── Buttons ── */
+.primary-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.primary-button:pressed {
+    -fx-background-color: #2471a3;
+}
+
+.secondary-button {
+    -fx-background-color: #95a5a6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14 6 14;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #7f8c8d;
+}
+
+.danger-button {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.danger-button:hover {
+    -fx-background-color: #c0392b;
+}
+
+.danger-button:pressed {
+    -fx-background-color: #a93226;
+}
+
+/* ── Status Bar ── */
+.status-bar {
+    -fx-background-color: #2c3e50;
+    -fx-padding: 8 15 8 15;
+}
+
+.status-label {
+    -fx-text-fill: #2ecc71;
+    -fx-font-size: 12px;
+}
+
+/* ── Hint Label ── */
+.hint-label {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-size: 11px;
+    -fx-font-style: italic;
+}
+
+/* ── Labels in forms ── */
+.form-section .label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 12px;
+}
